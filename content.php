@@ -9,6 +9,14 @@ if ($_GET['page'] == 'dashboard') {
     include "buyut.php";
 } elseif ($_GET['page'] == 'canggah') {
     include "canggah.php";
+} elseif ($_GET['page'] == 'eputrattl') {
+    include "eputrattl.php";
+} elseif ($_GET['page'] == 'epututtl') {
+    include "epututtl.php";
+} elseif ($_GET['page'] == 'ebuyutttl') {
+    include "ebuyutttl.php";
+} elseif ($_GET['page'] == 'ecanggahttl') {
+    include "ecanggahttl.php";
 } else {
     include "dashboard.php";
 }

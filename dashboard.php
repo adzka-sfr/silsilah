@@ -36,7 +36,19 @@
                                     <small class="text-muted">Kodriyah</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">65th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra1'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -50,7 +62,19 @@
                                     <small class="text-muted">Mutik</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">Wafat-2010</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra2'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -64,7 +88,19 @@
                                     <small class="text-muted">Munir</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">60th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra3'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -78,7 +114,19 @@
                                     <small class="text-muted">Sofwan</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">55th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra4'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -92,7 +140,19 @@
                                     <small class="text-muted">Rohmah</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">Wafat-2009</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra5'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -106,7 +166,19 @@
                                     <small class="text-muted">Latifah</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">50th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra6'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -120,7 +192,19 @@
                                     <small class="text-muted">Mutamim</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">45th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra7'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
@@ -134,7 +218,19 @@
                                     <small class="text-muted">Moh. Ridwan</small>
                                 </div>
                                 <div class="user-progress">
-                                    <small class="fw-semibold">40th</small>
+                                    <?php
+                                    $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra8'");
+                                    $data = mysqli_fetch_array($sql);
+                                    $ttl = $data['tanggallahir'];
+
+                                    // get umur
+                                    $diff = abs(strtotime($now) - strtotime($ttl));
+                                    $years = floor($diff / (365 * 60 * 60 * 24));
+                                    $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                                    $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                                    ?>
+                                    <small class="fw-semibold"><?= $years ?>th</small>
                                 </div>
                             </div>
                         </li>
