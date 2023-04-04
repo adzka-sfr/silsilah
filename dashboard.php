@@ -17,7 +17,7 @@
     </div>
     <div class="row">
         <!-- Order Statistics -->
-        <div class="col-md-8 col-lg-6 col-xl-4 order-0 mb-4">
+        <div class="col-md-8 col-lg-6 col-xl-8 order-0 mb-4">
             <div class="card h-100">
                 <div class="card-header d-flex align-items-center justify-content-between pb-0">
                     <div class="card-title mb-2 pb-3">
