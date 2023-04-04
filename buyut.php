@@ -47,18 +47,16 @@
                                                         $data1 = mysqli_fetch_array($sql1);
                                                         $ibu = $data1['ibu'];
                                                         $bapak = $data1['bapak'];
-
                                                         // get umur
-                                                        $diff = abs(strtotime($now) - strtotime($ttl));
-                                                        $years = floor($diff / (365 * 60 * 60 * 24));
-                                                        $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
-                                                        $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+                                                        $originalTime = new DateTimeImmutable($now);
+                                                        $targedTime = new DateTimeImmutable($ttl);
+                                                        $interval = $originalTime->diff($targedTime);
 
                                                         ?>
                                                         <?= $anak ?> merupakan putra ke-<?= $urutan ?> dari pernikahan <?= $bapak ?> dengan <?= $ibu ?>
                                                         <br>
                                                         <br>
-                                                        Umur <?= $anak ?> sekarang adalah <?= $years . " tahun " . $months . " bulan " . $days . " hari " ?>
+                                                        Umur <?= $anak ?> sekarang adalah <?= $interval->format("%y") . " tahun " . $interval->format("%m") . " bulan " . $interval->format("%d") . " hari " ?>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
