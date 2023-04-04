@@ -55,7 +55,8 @@
                                                         $days = floor(($diff - $years * 365 * 60 * 60 * 24 - $months * 30 * 60 * 60 * 24) / (60 * 60 * 24));
 
                                                         ?>
-                                                        <?= $anak ?> merupakan putra ke-<?= $urutan ?> dari pernikahan <?= $bapak ?> dengan <?= $ibu ?> <br>
+                                                        <?= $anak ?> merupakan putra ke-<?= $urutan ?> dari pernikahan <?= $bapak ?> dengan <?= $ibu ?>
+                                                        <br>
                                                         <br>
                                                         Umur <?= $anak ?> sekarang adalah <?= $years . " tahun " . $months . " bulan " . $days . " hari " ?>
                                                     </div>
