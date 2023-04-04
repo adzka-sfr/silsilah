@@ -23,6 +23,35 @@
                                 <li>Nilam</li>
                                 <li>Inun</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra1'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra1'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
                         </div>
                     </div>
                 </div>
@@ -42,6 +71,36 @@
                                 <li>Vina</li>
                                 <li>Oni</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra2'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra2'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+                            <br>
                             Zamzuri wafat pada tanggal 00-00-0000 dan dimakamkan di daerah Waung.
                         </div>
                     </div>
@@ -61,6 +120,36 @@
                                 <li>Miftah</li>
                                 <li>Ulfa</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra3'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra3'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+
                         </div>
                     </div>
                 </div>
@@ -80,6 +169,36 @@
                                 <li>Wahib</li>
                                 <li>Ela</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra4'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra4'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+
                         </div>
                     </div>
                 </div>
@@ -98,6 +217,36 @@
                                 <li>Fadil</li>
                                 <li>Dila</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra5'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra5'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+                            <br>
                             Tamyiz wafat pada tanggal 00-00-0000 dan dimakamkan di Pengkol.
                         </div>
                     </div>
@@ -118,6 +267,36 @@
                                 <li>Hisan</li>
                                 <li>Nilna</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra6'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra6'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+
                         </div>
                     </div>
                 </div>
@@ -136,6 +315,36 @@
                                 <li>Luluk</li>
                                 <li>Kikik</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra7'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra7'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+
                         </div>
                     </div>
                 </div>
@@ -154,6 +363,36 @@
                                 <li>Fahmi</li>
                                 <li>Zaha</li>
                             </ol>
+                            <?php
+                            // umur putra
+                            $sql = mysqli_query($connect, "SELECT * FROM putra WHERE id = 'putra8'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $putra = $data['nama'];
+
+                            // get umur putra
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_putra = floor($diff / (365 * 60 * 60 * 24));
+                            $months_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_putra = floor(($diff - $years_putra * 365 * 60 * 60 * 24 - $months_putra * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            // umur bojo
+                            $sql = mysqli_query($connect, "SELECT * FROM putra_nikah WHERE kodepasangan = 'putra8'");
+                            $data = mysqli_fetch_array($sql);
+                            $ttl = $data['tanggallahir'];
+                            $bojo = $data['nama'];
+
+                            // get umur bojo
+                            $diff = abs(strtotime($now) - strtotime($ttl));
+                            $years_bojo = floor($diff / (365 * 60 * 60 * 24));
+                            $months_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
+                            $days_bojo = floor(($diff - $years_bojo * 365 * 60 * 60 * 24 - $months_bojo * 30 * 60 * 60 * 24) / (60 * 60 * 24));
+
+                            ?>
+                            Umur <?= $putra ?> sekarang adalah <?= $years_putra . " tahun " . $months_putra . " bulan " . $days_putra . " hari " ?>
+                            <br>
+                            Umur <?= $bojo ?> sekarang adalah <?= $years_bojo . " tahun " . $months_bojo . " bulan " . $days_bojo . " hari " ?>
+
                         </div>
                     </div>
                 </div>
