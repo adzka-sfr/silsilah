@@ -6,9 +6,16 @@
                     <div class="col-sm-7">
                         <div class="card-body">
                             <h5 class="card-title text-primary">Silsilah Bani Shomad 🎉</h5>
-                            <p class="mb-4">
-                                H. Shomad lahir pada tanggal 00-00-0000 di Ponorogo. Beliau mempunyai seorang istri yang bernama Hj. Marsinah, istri H. Shomad lahir pada tanggal 00-00-0000. Kedua insan ini menikah pada tanggal 00-00-0000 dan dikaruniai 8 anak.
-                            </p>
+                            <?php
+                            $sql = mysqli_query($connect, "SELECT * FROM sejarah ORDER BY paragraf ASC");
+                            while ($data = mysqli_fetch_array($sql)) {
+                            ?>
+                                <p>
+                                    <?= $data['cerita'] ?>
+                                </p>
+                            <?php
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
